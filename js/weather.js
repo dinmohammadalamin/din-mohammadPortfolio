@@ -1,4 +1,4 @@
-const apiKey = "0932a7a3c0b2453fbb4134818242310"; // Replace with your WeatherAPI key
+const apiKey = "df1930cbac7540488d5211454242310"; // Replace with your WeatherAPI key
 const city = "Rajshahi";
 const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=5&aqi=no&alerts=no`;
 
