@@ -1,0 +1,107 @@
+h1,
+h3 {
+  margin: 15px 0;
+}
+
+/* Weather Section Styles */
+.weather-section {
+  color: var(--text-black-900);
+  margin-top: -15px;
+  padding-right: 100px;
+  background: var(--bg-black-900);
+  display: grid;
+  justify-content: end;
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.weather-info img {
+  width: 60px;
+  height: 60px;
+  margin-right: 5px;
+}
+
+.weather-info p {
+  margin: 0;
+  font-size: 24px;
+}
+
+.forecast {
+  margin-top: 10px;
+  display: none; /* Initially hidden */
+}
+
+.forecast-day {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.forecast-day img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.forecast-day strong {
+  flex: 1;
+  text-align: left;
+}
+
+.forecast-day span {
+  flex: 2;
+  text-align: right;
+}
+
+/* Button Styles */
+.toggle-forecast-btn {
+  margin-top: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.toggle-forecast-btn:hover {
+  background-color: #00b31e;
+  transition: 0.5s;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  h1,
+  h3 {
+    font-size: 20px;
+  }
+
+  .weather-info p {
+    font-size: 14px;
+  }
+
+  .forecast-day {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .forecast-day img {
+    margin-bottom: 5px; /* Space between icon and text */
+  }
+
+  .forecast-day span {
+    text-align: left; /* Align text to the left */
+  }
+}
+
+@media (max-width: 400px) {
+  .toggle-forecast-btn {
+    padding: 6px 12px; /* Smaller button padding */
+    font-size: 12px; /* Smaller font size for button */
+  }
+}
