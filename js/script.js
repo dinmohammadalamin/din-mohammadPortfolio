@@ -40,7 +40,15 @@ icon.onclick = function () {
 
 /*===============typing animation============*/
 var typed = new Typed(".typing", {
-  strings: ["", "Web Developer", "Writer", "Laravel", "YouTuber"],
+  strings: [
+    "",
+    "Web Developer",
+    "SQA ",
+    "Writer",
+    "Laravel Developer",
+    "YouTuber",
+    "Traveller",
+  ],
   typeSpeed: 50,
   backSpeed: 30,
   backDelay: 1000,
